@@ -16,6 +16,7 @@ var winning_patterns =[
     [6,7,8]
 ];
 
+// reset game 
 var resetGame = ()=>{
     turn0 = true
     enablebox()
@@ -35,6 +36,7 @@ var enablebox = ()=>{
     }
 }
 
+// checking for each turn once the button is clicked.
 btn.forEach((box) => {
     box.addEventListener("click", ()=>{
         if(turn0){
@@ -47,10 +49,16 @@ btn.forEach((box) => {
         }
         box.disabled = true
         pattern()
+        if(draw()){
+            win.innerText = "Ah oh, It`s a Draw!"
+            msgContainer.classList.remove("hide")
+            disablebox()
+        }
     })
 });
 
 
+// checking for winning patterns
 var pattern = () =>{
     for(let i=0;i<winning_patterns.length;i++){
         var position1 = btn[winning_patterns[i][0]].innerText
@@ -65,6 +73,15 @@ var pattern = () =>{
         }
     }
 
+}
+// for draw condition
+var draw = ()=>{
+    for(let i=0;i<9;i++){
+        if(btn[i].innerText === ""){
+            return false;
+        }
+    }
+    return true;
 }
 
 reset.addEventListener("click", resetGame);
