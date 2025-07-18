@@ -3,7 +3,7 @@ body{
     text-align: center;
 }
 .container{
-    height: 80vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
 }
@@ -14,8 +14,8 @@ body{
 }
 .inner{
     margin-top: 10px;
-    height: 70vh;
-    width: 600px;
+    height: 80vh;
+    width: 700px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -23,12 +23,12 @@ body{
     gap: 20px;
 }
 .box{
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 10px;
     border: none;
     background-color: #dde7c7;
-    font-size: 80px;
+    font-size: 100px;
     color: black;
 
 }

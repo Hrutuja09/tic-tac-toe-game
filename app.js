@@ -58,7 +58,7 @@ var pattern = () =>{
         var position3 = btn[winning_patterns[i][2]].innerText
         if(position1 !="" && position2!="" && position3!=""){
             if (position1 === position2 && position2===position3){
-                win.innerText = "Congratulations Winner is "+ position1;
+                win.innerText = "Congratulations, Winner is "+ position1;
                 msgContainer.classList.remove("hide")
                 disablebox()
             }
