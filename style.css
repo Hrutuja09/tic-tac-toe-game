@@ -61,10 +61,10 @@ body{
     display:none;
 }
 
-/* Responsiveness Added for mobile Phones */
-@media (max-width: 400px) {
+/* Responsiveness Added for all screens */
+@media (max-width: 1200px) {
   .inner {
-    width: 100%;
+    width: 270px;
     gap: 10px;
   }
 
