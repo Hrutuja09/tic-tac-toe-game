@@ -50,7 +50,7 @@ btn.forEach((box) => {
         box.disabled = true
         pattern()
         if(draw()){
-            win.innerText = "Ah oh, It`s a Draw!"
+            win.innerText = "Ah Oh! It`s a Draw"
             msgContainer.classList.remove("hide")
             disablebox()
         }
@@ -66,9 +66,10 @@ var pattern = () =>{
         var position3 = btn[winning_patterns[i][2]].innerText
         if(position1 !="" && position2!="" && position3!=""){
             if (position1 === position2 && position2===position3){
-                win.innerText = "Congratulations, Winner is "+ position1;
+                win.innerText = "Congratulations! Winner is "+ position1;
                 msgContainer.classList.remove("hide")
                 disablebox()
+                return true
             }
         }
     }
