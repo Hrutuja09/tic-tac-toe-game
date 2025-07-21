@@ -62,7 +62,7 @@ body{
 }
 
 /* Responsiveness Added for mobile Phones */
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   .inner {
     width: 100%;
     gap: 10px;
